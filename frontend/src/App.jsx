@@ -8,8 +8,14 @@ function App() {
         <BrowserRouter>
             <Navbar />
             <Routes>
-                <Route path='/' element={<Home />} />
-                <Route path='/cakes' element={<Cakes />} />
+                <Route
+                    path="/"
+                    element={<Home />}
+                />
+                <Route
+                    path="/cakes"
+                    element={<Cakes />}
+                />
             </Routes>
         </BrowserRouter>
     );

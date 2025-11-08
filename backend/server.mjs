@@ -4,6 +4,7 @@ dotenv.config();
 import path from 'node:path';
 import express from 'express';
 import ejs from 'ejs';
+import cors from 'cors';
 
 const PORT = process.env.PORT || 3500;
 const app = express();
@@ -12,6 +13,7 @@ const dir = import.meta.dirname;
 app.use(express.static(path.resolve(dir, 'public')));
 app.set('view engine', ejs);
 app.use(express.json());
+app.use(cors());
 
 import dbConnect from './utils/dbConnection.mjs';
 
@@ -31,6 +33,9 @@ app.use('/api', mainRouter);
 
 import cakesRouter from './routes/cakes/cakesRoutesBackend.mjs';
 app.use('/api/cakes-backend', cakesRouter);
+
+import cakesFrontendRouter from './routes/cakes/cakesRoutesFrontend.mjs';
+app.use('/api/cakes-frontend', cakesFrontendRouter);
 
 import newCakeRouter from './routes/cakes/newCakeRoutes.mjs';
 app.use('/api/new-cake', newCakeRouter);

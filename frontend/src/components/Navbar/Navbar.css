@@ -1,0 +1,19 @@
+.navbar-kontener {
+    background-color: blue;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.frontend-nav {
+    display: flex;
+    flex-direction: row;
+}
+
+.navbar-kontener a {
+    color: whitesmoke;
+    display: inline-block;
+    padding: 1em;
+    text-decoration: none;
+    width: 100%;
+}

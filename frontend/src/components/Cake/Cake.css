@@ -1,0 +1,18 @@
+.torta-kontener {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.torta-kepek-kontener {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1em;
+}
+
+.torta-kepek-kontener img {
+    height: 300px;
+    object-fit: cover;
+    object-position: top;
+    width: 100%;
+}

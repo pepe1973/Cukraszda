@@ -1,0 +1,9 @@
+.home-kontener {
+    align-items: center;
+    background-image: url('https://www.kristalycukraszda.hu/images/slider1.jpg');
+    color: whitesmoke;
+    display: flex;
+    height: 94vh;
+    justify-content: center;
+    width: 100%;
+}
