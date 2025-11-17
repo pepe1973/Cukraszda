@@ -43,6 +43,12 @@ app.use('/api/new-cake', newCakeRouter);
 import oneCakeRouter from './routes/cakes/oneCakeRoutesBackend.mjs';
 app.use('/api/one-cake-backend', oneCakeRouter);
 
+import usersRouter from './routes/users/usersRoutesBackend.mjs';
+app.use('/api/users-backend', usersRouter);
+
+import userRegisterRouter from './routes/users/userRegisterRoutes.mjs';
+app.use('/api/register-frontend', userRegisterRouter);
+
 app.use((req, res) => {
     try {
         res.statusCode = 404;

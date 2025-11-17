@@ -1,0 +1,20 @@
+.register-kontener {
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	height: 90vh;
+	justify-content: center;
+	width: 100vw;
+}
+
+.register-kontener table td {
+	font-size: 1em;
+	padding: 1em;
+	text-align: right;
+}
+
+.register-kontener table td input,
+.register-kontener table td button {
+	font-size: 1em;
+	padding: 0.5em;
+}
