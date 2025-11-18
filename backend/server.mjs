@@ -49,6 +49,9 @@ app.use('/api/users-backend', usersRouter);
 import userRegisterRouter from './routes/users/userRegisterRoutes.mjs';
 app.use('/api/register-frontend', userRegisterRouter);
 
+import userLoginRouter from './routes/users/userLoginRoutes.mjs';
+app.use('/api/login-frontend', userLoginRouter);
+
 app.use((req, res) => {
     try {
         res.statusCode = 404;

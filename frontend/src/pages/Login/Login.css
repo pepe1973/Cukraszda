@@ -1,0 +1,20 @@
+.login-kontener {
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	height: 90vh;
+	justify-content: center;
+	width: 100vw;
+}
+
+.login-kontener table td {
+	font-size: 1em;
+	padding: 1em;
+	text-align: right;
+}
+
+.login-kontener table td input,
+.login-kontener table td button {
+	font-size: 1em;
+	padding: 0.5em;
+}

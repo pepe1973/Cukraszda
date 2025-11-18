@@ -17,3 +17,18 @@
     text-decoration: none;
     width: 100%;
 }
+
+.login-belso-kontener {
+    display: flex;
+    flex-direction: row;
+}
+
+.logout-kontener button {
+    background-color: blue;
+    /* border: 1px solid white; */
+    border: none;
+    color: whitesmoke;
+    font-size: 1em;
+    height: 100%;
+    padding: 1em;
+}
