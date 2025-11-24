@@ -1,6 +1,10 @@
 import './Cake.css';
 
 const Cake = ({ elem }) => {
+    function megnezes(id) {
+        window.location.href = `/egyedicake/${id}`;
+    }
+
     return (
         <div className="torta-kontener">
             <h1>{elem.nev}</h1>
@@ -16,6 +20,9 @@ const Cake = ({ elem }) => {
                 })}
             </div>
             <p>{elem.leiras}</p>
+            <button onClick={() => megnezes(elem._id)}>
+                Nézzük meg közelebről
+            </button>
         </div>
     );
 };

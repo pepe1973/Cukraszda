@@ -4,16 +4,33 @@ import Home from './pages/Home/Home';
 import Cakes from './pages/Cakes/Cakes';
 import Register from './pages/Register/Register';
 import Login from './pages/Login/Login';
+import EgyediCake from './pages/EgyediCake/EgyediCake';
 
 function App() {
     return (
         <BrowserRouter>
             <Navbar />
             <Routes>
-                <Route path="/" element={<Home />} />
-                <Route path="/cakes" element={<Cakes />} />
-                <Route path="/register" element={<Register />} />
-                <Route path="/login" element={<Login />} />
+                <Route
+                    path="/"
+                    element={<Home />}
+                />
+                <Route
+                    path="/cakes"
+                    element={<Cakes />}
+                />
+                <Route
+                    path="/egyedicake/:id"
+                    element={<EgyediCake />}
+                />
+                <Route
+                    path="/register"
+                    element={<Register />}
+                />
+                <Route
+                    path="/login"
+                    element={<Login />}
+                />
             </Routes>
         </BrowserRouter>
     );

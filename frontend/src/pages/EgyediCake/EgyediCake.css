@@ -1,0 +1,16 @@
+.egyedi-kontener {
+    margin: auto;
+    width: 50%;
+}
+
+.egyedi-kepek {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.egyedi-kep img {
+    gap: 1em;
+    height: 200px;
+    object-fit: fill;
+    width: 90%;
+}
